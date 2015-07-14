@@ -1,8 +1,16 @@
-###To compile *inject.c*:###
+###MBE Shellcode Solution###
+This is my solution to **MBE**'s shellcode exercise.
 
-`gcc -z execstack -fno-stack-protector -o inject inject.c -m32`
+My shellcode creates a file named `PWNED!` using a stack overflow.
 
+---
+####Compilation:####
 
-###To compile *code.asm*:###
-
-`./make-shellcode > payload`
+- In order compile `inject.c`:
+```
+gcc -z execstack -fno-stack-protector -o inject inject.c -m32`
+```
+- In order compile `code.asm`:
+```
+./make-shellcode > payload
+```
