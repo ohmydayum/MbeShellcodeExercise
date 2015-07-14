@@ -1,5 +1,5 @@
 ###MBE Shellcode Solution###
-This is my solution to **MBE**'s shellcode exercise.
+This is my solution to **MBE**'s shellcode [exercise](https://github.com/ohmydayum/MBE/tree/master/src/lecture/shellcode).
 
 My shellcode creates a file named `PWNED!` using a stack overflow.
 
