@@ -1,5 +1,8 @@
-To compile inject.c:
+###To compile *inject.c*:###
+
 `gcc -z execstack -fno-stack-protector -o inject inject.c -m32`
 
-To compile code.asm:
+
+###To compile *code.asm*:###
+
 `./make-shellcode > payload`
