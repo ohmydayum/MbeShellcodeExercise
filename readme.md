@@ -10,7 +10,7 @@ My shellcode creates a file named `PWNED!` using a stack overflow.
 ```
 gcc -z execstack -fno-stack-protector -o inject inject.c -m32`
 ```
-- In order to compile `code.asm`:
+- In order to create `payload`:
 ```
 ./make-shellcode.sh > payload
 ```
