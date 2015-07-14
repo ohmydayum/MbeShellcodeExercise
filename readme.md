@@ -6,11 +6,11 @@ My shellcode creates a file named `PWNED!` using a stack overflow.
 ---
 ####Compilation:####
 
-- In order compile `inject.c`:
+- In order to compile `inject.c`:
 ```
 gcc -z execstack -fno-stack-protector -o inject inject.c -m32`
 ```
-- In order compile `code.asm`:
+- In order to compile `code.asm`:
 ```
 ./make-shellcode > payload
 ```
