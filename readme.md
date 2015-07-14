@@ -12,5 +12,5 @@ gcc -z execstack -fno-stack-protector -o inject inject.c -m32`
 ```
 - In order to compile `code.asm`:
 ```
-./make-shellcode > payload
+./make-shellcode.sh > payload
 ```
