@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-/* gcc -z execstack -fno-stack-protector -o inject inject.c */
-
 int main()
 {
     char buffer[128];
