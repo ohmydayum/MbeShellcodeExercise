@@ -4,13 +4,19 @@ This is my solution to **MBE**'s shellcode [exercise](https://github.com/ohmyday
 My shellcode creates a file named `PWNED!` using a stack overflow.
 
 ---
-####Compilation:####
+####Compilation steps:####
 
-- In order to compile `inject.c`:
+1. In order to compile `inject.c`:
 ```
-gcc -z execstack -fno-stack-protector -o inject inject.c -m32`
+gcc -z execstack -fno-stack-protector -o inject inject.c -m32
 ```
-- In order to create `payload`:
+
+2. In order to create `payload`:  
 ```
-./make-shellcode.sh > payload
+./make-shellcode.sh exploit > payload
+```
+
+3. In order to run POC:  
+```
+cat ./payload | ./inject
 ```
